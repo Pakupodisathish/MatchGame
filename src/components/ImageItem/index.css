@@ -1,9 +1,9 @@
 .image-item-container {
-  margin:3px;
+  margin: 3px;
 }
 .image-btn-container {
   height: 100px;
-  width:100px;
+  width: 100px;
   border: none;
   background-color: transparent;
   outline: none;
@@ -16,25 +16,25 @@
 @media (min-width: 576px) {
   .image-btn-container {
     height: 120px;
-    width:100px;
+    width: 100px;
   }
 }
-@media(min-width:768px){
-  .image-btn-container{
-    width:120px;
+@media (min-width: 768px) {
+  .image-btn-container {
+    width: 120px;
   }
-  .image-item-container{
-    margin:10px;
+  .image-item-container {
+    margin: 10px;
   }
 }
 @media (min-width: 992px) {
   .image-btn-container {
     height: 130px;
-    width:150px;
+    width: 150px;
   }
 }
-@media (min-width:1120px){
-  .image-btn-container{
-    width:200px;
+@media (min-width: 1120px) {
+  .image-btn-container {
+    width: 200px;
   }
 }
