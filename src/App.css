@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navbar {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c0e3a;
+  padding: 20px 15px;
+}
+.logo {
+  height: 40px;
+  width: 80px;
+}
+.navitems {
+  display: flex;
+  align-items: center;
+}
+.score-container {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+}
+.score {
+  color: #fec653;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.timer-logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+}
+.timer-img {
+  height: 40px;
+  width: 30px;
+}
+.time {
+  font-size: 15px;
+  color: #fec653;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+}
+.game-bg-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  min-height: 70vh;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tumbnail-img {
+  width: 60%;
+  margin: 10px;
+}
+.tabitems-container {
+  display: flex;
+  list-style-type: none;
+}
+.images-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.game-score-card-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+  width: 280px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.trophy-image {
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.result-score-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+}
+.play-again-btn-container {
+  background-color: #cf60c8;
+  padding: 5px 12px;
+  font-size: 10px;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.reset-img {
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 576px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+  .game-score-card-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+  }
+}
+@media (min-width: 920px) {
+  .game-score-card-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 120px;
+    height: 70px;
+  }
+  .game-score-card-container {
+    width: 450px;
+    height: 600px;
+  }
+}

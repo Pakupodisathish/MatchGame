@@ -1,0 +1,18 @@
+.tab-item {
+  margin: 5px;
+}
+.tabitem {
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: transparent;
+}
+.activetab {
+  color: #fec653;
+  border-bottom: 2px solid #fec653;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 20px;
+  background-color: transparent;
+}
