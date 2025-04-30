@@ -1,8 +1,10 @@
 🎮 Match Game
 A fun and fast-paced matching game built with React, where players match a displayed image with one of many thumbnails based on category tabs. The game is timed and scores are tracked until the player makes a mistake or the timer runs out.
 
-🚀 Live Demo
-👉 Click here to play the Match Game
+## 🚀 Live Demo
+
+👉 [Click here to play the Match Game](https://pakupodisathish.github.io/MatchGame/)
+
 
 🧩 Features
 🕒 60-second countdown timer
