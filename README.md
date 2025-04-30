@@ -1,127 +1,109 @@
-In this project, let's build a **Match Game** by applying the concepts we have learned till now.
+🎮 Match Game
+A fun and fast-paced matching game built with React, where players match a displayed image with one of many thumbnails based on category tabs. The game is timed and scores are tracked until the player makes a mistake or the timer runs out.
 
-### Refer to the video below:
+🚀 Live Demo
+👉 Click here to play the Match Game
 
-<br/>
-<div style="text-align: center;">
-  <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/match-game-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+🧩 Features
+🕒 60-second countdown timer
 
-### Design Files
+✅ Score increases on correct matches
 
-<details>
-<summary>Click to view</summary>
+❌ Game ends on incorrect match or when time runs out
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/match-game-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Match Game](https://assets.ccbp.in/frontend/content/react-js/match-game-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Scorecard](https://assets.ccbp.in/frontend/content/react-js/match-game-score-card-lg-output.png)
+🔄 "Play Again" button resets the game
 
-</details>
+📁 Filter thumbnails by category tabs (Fruits, Animals, Places)
 
-### Set Up Instructions
+🖼️ Screens Supported
+Extra Small & Small (Size < 768px): Responsive layout optimized for mobile
 
-<details>
-<summary>Click to view</summary>
+Medium and Above (Size ≥ 768px):
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+Match Game View
 
-### Completion Instructions
+Scorecard View on game over
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+📦 Getting Started
+Prerequisites
+Ensure you have Node.js and npm installed.
 
-The app must have the following functionalities
+Installation
+bash
+Copy
+Edit
+git clone https://github.com/your-username/match-game.git
+cd match-game
+npm install
+Run the App
+bash
+Copy
+Edit
+npm start
+🛠️ Functional Requirements
+On initial load:
 
-- Initially,
-  - Score should be `0` and time should be `60` sec
-  - The image to be matched should have the src attribute value as the value of the key `imageUrl` from the first object in **imagesList** provided
-  - The **Fruits** tab should be active and the thumbnails with **FRUIT** as their category should be displayed
-- The timer should start running backwards from the `60` sec
-- When a tab is clicked, then the thumbnails in the corresponding category should be displayed
-- When a thumbnail is clicked, if that is matched with the image to be matched,
-  - Score is incremented by one
-  - The new image to be matched should be generated randomly among the value of the key `imageUrl` from **imagesList** provided
-- When a thumbnail is clicked, if it is not matched with the image to be matched,
-  - The game should end, and the [Scorecard](https://assets.ccbp.in/frontend/content/react-js/match-game-score-card-lg-output.png) view should be displayed
-  - When **PLAY AGAIN** button is clicked, then we should be able to play the game again
-    - The score and time values should be reset to `0` and `60` sec respectively
-    - The image to be matched should reset to the value of the key `imageUrl` from the first object in **imagesList** provided
-    - The active tab should reset to **Fruits**, and the thumbnails with **FRUIT** as their category should be displayed
-- When the timer reached `0` sec, then the game should end, and the [Scorecard](https://assets.ccbp.in/frontend/content/react-js/match-game-score-card-lg-output.png) view should be displayed
-- The App is provided with `tabsList`. It consists of a list of tabItem objects with the following properties in each tabItem object
+Score is 0
 
-  |     Key     | Data Type |
-  | :---------: | :-------: |
-  |    tabId    |  String   |
-  | displayText |  String   |
+Timer is set to 60s
 
-- The App is provided with `imagesList`. It consists of a list of imageItem objects with the following properties in each imageItem object
+First image to match is the first object in imagesList
 
-  |     Key      | Data Type |
-  | :----------: | :-------: |
-  |      id      |  String   |
-  |   imageUrl   |  String   |
-  | thumbnailUrl |  String   |
-  |   category   |  String   |
+Active tab is Fruits
 
-</details>
+On thumbnail click:
 
-### Important Note
+✅ If correct: score increases, a new random image is selected
 
-<details>
-<summary>Click to view</summary>
+❌ If incorrect: game ends, scorecard is shown
 
-<br/>
+On tab click: thumbnails update to match selected category
 
-**The following instructions are required for the tests to pass**
+On timer reaching 0s: game ends
 
-- The image to be matched in the app should have the alt as **match**
-- The thumbnail images in the app should have the alt as **thumbnail**
+On "Play Again": game resets to initial state
 
-</details>
+📂 Data Structures
+tabsList (Array of Objects)
+js
+Copy
+Edit
+{
+  tabId: String,
+  displayText: String
+}
+imagesList (Array of Objects)
+js
+Copy
+Edit
+{
+  id: String,
+  imageUrl: String,
+  thumbnailUrl: String,
+  category: String
+}
+🎨 Assets & Style
+Image URLs
+Background: https://assets.ccbp.in/frontend/react-js/match-game-bg.png
 
-### Resources
+Scorecard (Large): https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png
 
-<details>
-<summary>Image URLs</summary>
+Scorecard (Small): https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png
 
-- [https://assets.ccbp.in/frontend/react-js/match-game-bg.png](https://assets.ccbp.in/frontend/react-js/match-game-bg.png)
-- [https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png](https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png)
-- [https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png](https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png)
-- [https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png](https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png) alt should be **website logo**
-- [https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png](https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png) alt should be **timer**
-- [https://assets.ccbp.in/frontend/react-js/match-game-play-again-img.png](https://assets.ccbp.in/frontend/react-js/match-game-play-again-img.png) alt should be **reset**
-- [https://assets.ccbp.in/frontend/react-js/match-game-trophy.png](https://assets.ccbp.in/frontend/react-js/match-game-trophy.png) alt should be **trophy**
+Logo: https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png
 
-</details>
+Timer Icon: https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png
 
-<details>
-<summary>Colors</summary>
+Reset Icon: https://assets.ccbp.in/frontend/react-js/match-game-play-again-img.png
 
-<br/>
+Trophy: https://assets.ccbp.in/frontend/react-js/match-game-trophy.png
 
-<div style="background-color:#2c0e3a; width: 150px; padding: 10px; color: white">Hex: #2c0e3a</div>
-<div style="background-color:#ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color:#fec653; width: 150px; padding: 10px; color: black">Hex: #fec653</div>
-<div style="background-color:#cf60c8; width: 150px; padding: 10px; color: black">Hex: #cf60c8</div>
-</details>
+Colors
+Background: #2c0e3a
 
-<details>
-<summary>Font-families</summary>
+Text: #ffffff
 
-- Roboto
+Accent: #fec653, #cf60c8
 
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+Fonts
+Roboto
